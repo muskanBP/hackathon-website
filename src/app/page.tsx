@@ -1,9 +1,30 @@
-import Image from "next/image";
+import Navbar from "./components/navbar";
+import Header from "./components/header";
+import Menu from "./components/menu";
 
-export default function Home() {
-  return (
-    <div>
-      hello world
-    </div>
-  );
+import CustomCarousel from "./components/featuredproduct";
+import RatingBar from "./components/RatingBar";
+import HeroSection from "./components/hero";
+
+
+
+export default function home() {
+    
+  return  (
+<div>
+
+
+
+<Header />
+
+
+<HeroSection />
+
+
+<Menu />
+
+</div>
+
+
+  )
 }
