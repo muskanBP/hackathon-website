@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Add this in a CSS file */
+body {
+    font-size: 16px; /* Default for mobile */
+  }
+  
+  @media (min-width: 768px) {
+    body {
+      font-size: 18px; /* For tablets and above */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      font-size: 20px; /* For desktops and above */
+    }
+  }
+  

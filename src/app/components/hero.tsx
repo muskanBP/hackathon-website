@@ -10,24 +10,24 @@ const slides = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
     buttonText: "Shop Now",
-    chairImage: "\images\Furniture Chair.png ", // Replace with the correct path
-    lampImage: "/lamp.png", // Replace with the correct path
+    chairImage: "/images/sofa promotional header.png", // Replace with the correct path
+    lampImage: "/images/lamp.png", // Replace with the correct path
   },
   {
     title: "Modern Chair Designs for Your Home",
     description:
       "Discover the latest modern furniture trends to elevate your living space.",
     buttonText: "Shop Now",
-    chairImage: " \images\Furniture Chair.png", // Replace with another chair image
-    lampImage: "/lamp.png", // Replace with another lamp image
+    chairImage: "/images/sofa promotional header.png", // Replace with another chair image
+    lampImage: "/images/image 32.png", // Replace with another lamp image
   },
   {
     title: "Elegant Furniture for Every Space",
     description:
       "Bring timeless elegance to your home with our exclusive furniture collection.",
     buttonText: "Shop Now",
-    chairImage: "\images\Furniture Chair.png ", // Replace with another chair image
-    lampImage: "/lamp.png", // Replace with another lamp image
+    chairImage: "/images/sofa promotional header.png", // Replace with another chair image
+    lampImage: "/images/image 32.png", // Replace with another lamp image
   },
 ];
 
@@ -52,7 +52,7 @@ function HeroSection() {
       <div className="md:w-1/4 flex justify-center items-start relative">
         <div className="absolute top-[-350px] left-[-40px] z-10">
           <Image
-            src="/1.png"
+            src="/images/lamp.png"
             alt="Lamp"
             width={387} // Fixed size for lamp
             height={387} // Fixed size for lamp
@@ -84,7 +84,7 @@ function HeroSection() {
       <div className="md:w-1/3 flex justify-center items-center relative">
         <div className="relative bg-gradient-to-r from-pink-100 to-purple-200 rounded-full p-10 shadow-xl mt-10 mx-auto">
           <Image
-            src="/2.png"
+            src="/images/sofa promotional header.png"
             alt="Furniture Chair"
             width={706}
             height={689}

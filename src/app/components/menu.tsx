@@ -16,7 +16,7 @@ const menu = () => {
      <TrendingProducts /> {/* Added TrendingProducts here */}
      <DiscountItem />
      <Newsletter />
-     <LatestProducts />
+
     
     </div>
   );

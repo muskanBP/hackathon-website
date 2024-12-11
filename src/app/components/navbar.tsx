@@ -1,15 +1,15 @@
 'use client';
 import React from 'react';
 import { MdOutlineEmail } from 'react-icons/md';
-import { FaPhoneVolume } from 'react-icons/fa6';
+import { FaPhoneVolume, FaChevronDown, FaRegHeart } from 'react-icons/fa6';
 import { FiUser } from 'react-icons/fi';
-import { FaChevronDown, FaRegHeart } from 'react-icons/fa6';
 import { LuShoppingCart } from 'react-icons/lu';
 
 const Header = () => {
   return (
-    <div className="hidden sm:block">
-      <div className="bg-[#7E33E0] text-[#f1f1f1] h-[44px] flex items-center justify-center">
+    <div>
+      {/* Desktop View */}
+      <div className="hidden sm:flex bg-[#7E33E0] text-[#f1f1f1] h-[44px] items-center justify-center">
         <div className="max-w-[1200px] w-full flex justify-between items-center px-4">
           {/* Left: Contact Info */}
           <div className="flex items-center gap-6">
@@ -49,7 +49,24 @@ const Header = () => {
           </div>
         </div>
       </div>
-      
+
+      {/* Mobile View */}
+      <div className="sm:hidden bg-[#7E33E0] text-[#f1f1f1] py-2 px-4 flex items-center justify-between">
+        {/* Left: Logo or Contact Button */}
+        <div className="flex items-center gap-2">
+          <MdOutlineEmail className="text-white w-5 h-5" />
+          <a href="mailto:mhhasanul@gmail.com" className="text-sm font-semibold">
+            Email Us
+          </a>
+        </div>
+
+        {/* Right: Hamburger Menu (for user options) */}
+        <div className="flex items-center gap-4">
+          <FiUser className="text-white w-5 h-5" title="Login" />
+          <FaRegHeart className="text-white w-5 h-5" title="Wishlist" />
+          <LuShoppingCart className="text-white w-5 h-5" title="Cart" />
+        </div>
+      </div>
     </div>
   );
 };

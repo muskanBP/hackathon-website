@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-import next from 'next';
-// Discount Section
+
 const DiscountItem: React.FC = () => {
   return (
-    <div className="container mx-auto px-4 py-8 bg-white">
+    <div className="container mx-auto px-4 py-8  bg-white">
       <h1 className="text-3xl font-bold text-center mb-8 text-[#151875]">Discount Items</h1>
 
       {/* Navigation Links */}
@@ -37,7 +36,7 @@ const DiscountItem: React.FC = () => {
         {/* Right Content */}
         <div className="flex-1">
           <Image
-            src="/chair.png"
+            src="/images/tortuga-01-b 1.png"
             alt="Chair"
             width={400}
             height={400}
@@ -68,7 +67,7 @@ const TopCateg: React.FC = () => {
           >
             <div className="w-56 h-56 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden mb-6">
               <Image
-                src={image}
+                src={"/images/Frame 1 (1).png"}
                 alt={`Category ${index + 1}`}
                 width={224} // Adjust size to match Tailwind classes
                 height={224}
