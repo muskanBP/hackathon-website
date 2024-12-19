@@ -28,7 +28,7 @@ const LatestProducts: React.FC = () => {
       price: 40.0,
       originalPrice: 60.0,
       sale: false,
-      imageUrl: "/images/image 1169.png",
+      imageUrl: "/images/box for image.png",
     },
     {
       name: "Product 5",

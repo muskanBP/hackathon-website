@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { IoSearch, IoMenu, IoClose } from 'react-icons/io5';
 
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -47,7 +48,7 @@ const Navbar = () => {
           </li>
           <li className="mt-4 md:mt-0">
             <Link
-              href="/products"
+              href="/Products"          
               className="font-bold text-black hover:text-pink-500"
               onClick={() => setMenuOpen(false)}
             >
@@ -56,7 +57,7 @@ const Navbar = () => {
           </li>
           <li className="mt-4 md:mt-0">
             <Link
-              href="/blog"
+              href="/Blog"
               className="font-bold text-black hover:text-pink-500"
               onClick={() => setMenuOpen(false)}
             >
@@ -65,7 +66,7 @@ const Navbar = () => {
           </li>
           <li className="mt-4 md:mt-0">
             <Link
-              href="/shop"
+              href="/Shop"
               className="font-bold text-black hover:text-pink-500"
               onClick={() => setMenuOpen(false)}
             >
@@ -73,8 +74,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="mt-4 md:mt-0">
-            <Link
-              href="/contact"
+          <Link href="/contactus"
+              
               className="font-bold text-black hover:text-pink-500"
               onClick={() => setMenuOpen(false)}
             >

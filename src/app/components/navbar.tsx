@@ -4,6 +4,7 @@ import { MdOutlineEmail } from 'react-icons/md';
 import { FaPhoneVolume, FaChevronDown, FaRegHeart } from 'react-icons/fa6';
 import { FiUser } from 'react-icons/fi';
 import { LuShoppingCart } from 'react-icons/lu';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -38,7 +39,9 @@ const Header = () => {
               <FaChevronDown />
             </div>
             <div className="flex items-center gap-2">
-              <span>Login</span>
+              <span>
+                <Link href="/my-app/Login">Login</Link>
+              </span>
               <FiUser />
             </div>
             <div className="flex items-center gap-2">

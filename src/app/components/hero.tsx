@@ -1,33 +1,32 @@
-"use client";
+'use client';
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 
 const slides = [
   {
     title: "New Furniture Collection Trends in 2020",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+      "Explore the perfect blend of style and functionality for your home decor.",
     buttonText: "Shop Now",
-    chairImage: "/images/sofa promotional header.png", // Replace with the correct path
-    lampImage: "/images/lamp.png", // Replace with the correct path
+    chairImage: "/images/sofa promotional header.png",
+    lampImage: "/images/image-32.png",
   },
   {
     title: "Modern Chair Designs for Your Home",
     description:
-      "Discover the latest modern furniture trends to elevate your living space.",
+      "Upgrade your living space with stunning modern furniture pieces.",
     buttonText: "Shop Now",
-    chairImage: "/images/sofa promotional header.png", // Replace with another chair image
-    lampImage: "/images/image 32.png", // Replace with another lamp image
+    chairImage: "/images/sofa promotional header.png",
+    lampImage: "/images/image-32.png",
   },
   {
     title: "Elegant Furniture for Every Space",
     description:
-      "Bring timeless elegance to your home with our exclusive furniture collection.",
+      "Discover timeless elegance with our curated furniture collection.",
     buttonText: "Shop Now",
-    chairImage: "/images/sofa promotional header.png", // Replace with another chair image
-    lampImage: "/images/image 32.png", // Replace with another lamp image
+    chairImage: "/images/sofa promotional header.png",
+    lampImage: "/images/image-32.png",
   },
 ];
 
@@ -47,66 +46,65 @@ function HeroSection() {
   const current = slides[currentSlide];
 
   return (
-    <section className="relative bg-gray-100 py-10 md:py-20 px-5 md:px-20 flex flex-col md:flex-row items-center justify-between overflow-hidden">
-      {/* Left Column: Lamp */}
-      <div className="md:w-1/4 flex justify-center items-start relative">
-        <div className="absolute top-[-350px] left-[-40px] z-10">
-          <Image
-            src="/images/lamp.png"
-            alt="Lamp"
-            width={387} // Fixed size for lamp
-            height={387} // Fixed size for lamp
-            className="object-contain"
-          />
-        </div>
-      </div>
+    <section className="relative bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 py-12 px-6 lg:px-12 flex flex-col items-center justify-center min-h-screen">
+      {/* Container: Balanced margins and centered alignment */}
+      <div className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto w-full gap-10">
+        {/* Left Column: Lamp */}
+        <div className="flex justify-center items-center w-full lg:w-1/3">
+        <div className="relative w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 animate-bounce">
 
-      {/* Center Column: Content (Title, Description, Button) */}
-      <div className="md:w-1/3 max-w-lg text-center md:text-left flex flex-col justify-center">
-        <p className="text-sm text-pink-500 font-medium">
-          Best Furniture For Your Castle...
-        </p>
-        <h1 className="text-3xl md:text-4xl font-bold text-indigo-950 leading-tight mt-2">
-          {current.title}
-        </h1>
-        <p className="text-gray-600 text-sm mt-4 leading-relaxed">
-          {current.description}
-        </p>
-        <Link
-          href="#"
-          className="inline-block bg-pink-500 text-white text-sm font-medium py-3 px-6 rounded-md mt-6 hover:bg-pink-600 transition-all duration-300 w-1/3 text-center"
-        >
-          {current.buttonText}
-        </Link>
-      </div>
-
-      {/* Right Column: Chair Image */}
-      <div className="md:w-1/3 flex justify-center items-center relative">
-        <div className="relative bg-gradient-to-r from-pink-100 to-purple-200 rounded-full p-10 shadow-xl mt-10 mx-auto">
-          <Image
-            src="/images/sofa promotional header.png"
-            alt="Furniture Chair"
-            width={706}
-            height={689}
-            className="object-contain w-full h-auto"
-          />
+            <Image
+              src={"/images/image 32.png"}
+              alt="Lamp"
+              fill
+              className="object-contain"
+            />
+          </div>
         </div>
-        {/* Discount Badge (if needed) */}
-        {/* <div className="absolute top-10 right-5 bg-gradient-to-r from-blue-400 to-blue-600 text-white text-xs font-medium py-2 px-4 rounded-full">
-          {current.discountText}
-        </div> */}
+
+        {/* Center Column: Text Content */}
+        <div className="w-full lg:w-1/3 text-center lg:text-center flex flex-col justify-center items-center">
+          <p className="text-sm md:text-base text-pink-600 font-semibold tracking-wide uppercase">
+            Best Furniture for Your Castle
+          </p>
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mt-4">
+            {current.title}
+          </h1>
+          <p className="text-gray-600 text-base md:text-lg mt-4 leading-relaxed">
+            {current.description}
+          </p>
+          <Link
+            href="#"
+            className="mt-6 bg-pink-600 text-white text-sm md:text-base font-medium py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 hover:shadow-xl transition-all duration-300"
+          >
+            {current.buttonText}
+          </Link>
+        </div>
+
+        {/* Right Column: Chair Image */}
+        <div className="w-full lg:w-1/3 flex justify-center items-center">
+          <div className="relative bg-gradient-to-r from-pink-200 to-purple-300 rounded-full p-6 md:p-8 lg:p-10 shadow-xl">
+            <Image
+              src={"/images/sofa promotional header.png"}
+              alt="Furniture Chair"
+              width={300}
+              height={300}
+              className="object-contain"
+            />
+          </div>
+        </div>
       </div>
 
       {/* Navigation Dots */}
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full ${
+            className={`w-4 h-4 rounded-full transition-all ${
               currentSlide === index
-                ? "bg-pink-500"
-                : "bg-gray-300 hover:bg-gray-400"
+                ? "bg-pink-600 scale-110"
+                : "bg-gray-400 hover:bg-gray-500"
             }`}
           ></button>
         ))}
@@ -115,20 +113,16 @@ function HeroSection() {
       {/* Navigation Arrows */}
       <button
         onClick={handlePrevSlide}
-        className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-white border border-gray-300 rounded-full p-2 hover:bg-gray-100"
+        className="absolute left-6 top-1/2 transform -translate-y-1/2 bg-white border border-gray-300 rounded-full p-3 shadow-lg hover:bg-gray-100 transition-all"
       >
         ❮
       </button>
       <button
         onClick={handleNextSlide}
-        className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-white border border-gray-300 rounded-full p-2 hover:bg-gray-100"
+        className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-white border border-gray-300 rounded-full p-3 shadow-lg hover:bg-gray-100 transition-all"
       >
         ❯
       </button>
-
-      
-c
-      
     </section>
   );
 }
