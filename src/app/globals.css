@@ -18,4 +18,11 @@ body {
       font-size: 20px; /* For desktops and above */
     }
   } 
+  @media (max-width: 768px) {
+    /* For smaller screens, change the layout */
+    .example-class {
+      font-size: 14px;
+    }
+  }
+  
   

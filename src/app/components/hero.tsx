@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const slides = [
   {
-    title: "New Furniture Collection Trends in 2020",
+    title: "New Furniture Collection Trends in 2025",
     description:
       "Explore the perfect blend of style and functionality for your home decor.",
     buttonText: "Shop Now",

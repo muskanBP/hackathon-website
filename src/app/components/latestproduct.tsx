@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"; // Importing the Next.js Image component
 
 const LatestProducts: React.FC = () => {
   const products = [
@@ -59,14 +60,15 @@ const LatestProducts: React.FC = () => {
           {products.map((product, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-lg p-4 text-center border border-gray-200"
+              className="bg-white shadow-lg rounded-lg p-4 text-center border border-gray-200 relative"
             >
               {/* Product Image */}
-              <div className="w-full h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden">
-                <img
+              <div className="w-full h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden relative">
+                <Image
                   src={product.imageUrl}
                   alt={product.name}
-                  className="w-full h-full object-cover"
+                  layout="fill" // Ensures the image takes up the container's full dimensions
+                  objectFit="cover" // Keeps the image aspect ratio while covering the container
                 />
               </div>
 

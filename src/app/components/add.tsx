@@ -72,8 +72,11 @@ const Add: React.FC = () => {
         <div className="flex flex-wrap md:flex-nowrap items-center gap-10 px-6">
           {/* Product Image */}
           <div className="flex-1 w-full md:w-1/2">
-            <img
+            <Image
               src="/images/Home-Stylish-Club-Sofa-Chair-Pleated-Sofa-Armchair-with-Golden-Legs 1.png"
+              width={1000}   // Natural width
+              height={10}   // Natural height
+              layout="responsive" 
               alt="Product"
               className="w-full h-auto object-contain"
             />

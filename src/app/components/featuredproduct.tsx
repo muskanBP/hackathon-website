@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const FeaturedProducts = () => {
   const products = [
@@ -45,10 +46,12 @@ const FeaturedProducts = () => {
             >
               {/* Product Image */}
               <div className="w-full h-40 flex items-center justify-center overflow-hidden rounded-lg bg-gray-100">
-                <img
+                <Image
                   src={product.image}
                   alt={product.name}
-                  className="object-contain w-full h-full"
+                  width={160}
+                  height={160}
+                  className="object-contain"
                 />
               </div>
 
