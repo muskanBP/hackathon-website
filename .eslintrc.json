@@ -1,10 +1,9 @@
 {
   "extends": [
-    "next/core-web-vitals",  // Use the core web vitals configuration for Next.js
-    "next/typescript",       // Extend the TypeScript configuration for Next.js
-    "next"                   // Use the base Next.js configuration
+    "next/core-web-vitals",  // Includes optimized rules for Next.js and React
+    "next"                   // Base Next.js rules
   ],
   "rules": {
-    "@next/next/no-img-element": "off"  // Disable the no-img-element rule
+    "@next/next/no-img-element": "off"  // Disable rule enforcing the use of Next.js <Image />
   }
 }
