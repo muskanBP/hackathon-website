@@ -157,7 +157,7 @@ function AccountPage() {
                 {isLogin ? 'Log In' : 'Create an Account'}
               </button>
 
-              {/* Conditional Secondary Button */}
+              {/* Conditionals Secondary Button */}
               {isLogin ? (
                 <div className="text-center mt-4 text-gray-600">
                   Don’t have an account?{' '}

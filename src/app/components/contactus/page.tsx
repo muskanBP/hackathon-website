@@ -72,7 +72,7 @@ function ContactUs() {
 
           {/* Right Section */}
           <div className="flex-1 lg:w-1/2">
-            {/* Contact Way */}
+            {/* Contacts Way */}
             <h2 className="text-2xl sm:text-3xl font-bold text-[#151875] mb-8">Contact Way</h2>
 
             <div className="space-y-6">

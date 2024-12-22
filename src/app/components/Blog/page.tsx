@@ -63,7 +63,7 @@ const BlogPage = () => {
         </div>
       </div>
 
-      {/* Main Content */}
+      {/* Mains Content */}
       <div className="flex flex-col lg:flex-row lg:justify-between px-6 lg:px-20 py-10 gap-8">
         {/* Blog Posts Section */}
         <div className="lg:w-2/3">

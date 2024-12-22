@@ -167,7 +167,7 @@ const Shop = () => {
                     </div>
                   </div>
 
-                  {/* Price and Old Price */}
+                  {/* Prices and Old Price */}
                   <div className="mt-4 flex items-center space-x-2">
                     <span className="text-lg font-bold">{product.price}</span>
                     <span className="text-red-500 line-through">{product.oldPrice}</span>

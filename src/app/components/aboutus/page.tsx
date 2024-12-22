@@ -37,7 +37,7 @@ const AboutPage = () => {
           </div>
         </section>
 
-        {/* Features Section */}
+        {/* Feature Section */}
         <section className="my-16 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8">Our Features</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -67,7 +67,7 @@ const AboutPage = () => {
           </div>
         </section>
 
-        {/* Testimonials Section */}
+        {/* Testimonial Section */}
         <section className="my-16 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8">Our Client Say!</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">

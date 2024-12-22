@@ -177,7 +177,7 @@ const Cart = () => {
         </div>
       </div>
 
-      {/* Footer section */}
+      {/* Footers section */}
       <Footer />
     </>
   );

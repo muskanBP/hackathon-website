@@ -88,7 +88,7 @@ function Account() {
         </div>
       </div>
 
-      {/* Footer */}
+      {/* Footers */}
       <Footer />
     </>
   );
