@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
                   />
                 </div>
                 <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">
-                  <a className="text-white hover:text-gray-800 ml-6 /Signuppage">
+                  <a href="/components/Signuppage"className="text-white hover:text-gray-800 ml-6 ">
                     Sign-Up
                   </a>
                 </button>
@@ -91,7 +91,7 @@ const Footer: React.FC = () => {
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800 /Blog">Blog</a>
+                  <a href="/components/Blog" className="text-gray-600 hover:text-gray-800 ">Blog</a>
                 </li>
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">Browse the Shop</a>

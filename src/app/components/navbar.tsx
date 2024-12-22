@@ -13,6 +13,7 @@ const Header = () => {
       <div className="hidden sm:flex bg-[#7E33E0] text-[#f1f1f1] h-[44px] items-center justify-center">
         <div className="max-w-[1200px] w-full flex justify-between items-center px-4">
           {/* Left: Contact Info */}
+          
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <MdOutlineEmail className="text-white w-4 h-4" />
@@ -40,7 +41,7 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-2">
               <span>
-                <Link href="/my-app/Login">Login</Link>
+                <Link href="/components/Login">Create Account</Link>
               </span>
               <FiUser />
             </div>
@@ -50,8 +51,10 @@ const Header = () => {
             </div>
             <LuShoppingCart className="w-6 h-6" />
           </div>
+          
         </div>
       </div>
+    
 
       {/* Mobile View */}
       <div className="sm:hidden bg-[#7E33E0] text-[#f1f1f1] py-2 px-4 flex items-center justify-between">

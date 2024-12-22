@@ -37,18 +37,10 @@ const Navbar = () => {
               Home
             </Link>
           </li>
+         
           <li className="mt-4 md:mt-0">
             <Link
-              href="/pages"
-              className="font-bold text-black hover:text-pink-500"
-              onClick={() => setMenuOpen(false)}
-            >
-              Pages
-            </Link>
-          </li>
-          <li className="mt-4 md:mt-0">
-            <Link
-              href="/Products"          
+              href="/components/Products"          
               className="font-bold text-black hover:text-pink-500"
               onClick={() => setMenuOpen(false)}
             >
@@ -57,7 +49,7 @@ const Navbar = () => {
           </li>
           <li className="mt-4 md:mt-0">
             <Link
-              href="/Blog"
+              href="/components/Blog"
               className="font-bold text-black hover:text-pink-500"
               onClick={() => setMenuOpen(false)}
             >
@@ -66,7 +58,7 @@ const Navbar = () => {
           </li>
           <li className="mt-4 md:mt-0">
             <Link
-              href="/Shop"
+              href="/components/shop"
               className="font-bold text-black hover:text-pink-500"
               onClick={() => setMenuOpen(false)}
             >
@@ -74,7 +66,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="mt-4 md:mt-0">
-          <Link href="/contactus"
+          <Link href="/components/contactus"
               
               className="font-bold text-black hover:text-pink-500"
               onClick={() => setMenuOpen(false)}
@@ -82,6 +74,16 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
+          <li className="mt-4 md:mt-0">
+            <Link
+              href="/components/aboutus"
+              className="font-bold text-black hover:text-pink-500"
+              onClick={() => setMenuOpen(false)}
+            >
+              About
+            </Link>
+          </li>
+          
         </ul>
 
         {/* Search and Options */}
