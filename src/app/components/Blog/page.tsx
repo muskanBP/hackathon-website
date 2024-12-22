@@ -144,7 +144,7 @@ const BlogPage = () => {
             </ul>
           </div>
 
-          {/* Tags */}
+          {/* Tags tag */}
           <div>
             <h3 className="text-lg font-bold text-[#001F54] mb-2">Tags</h3>
             <div className="flex flex-wrap gap-2">
