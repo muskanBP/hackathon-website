@@ -68,38 +68,40 @@ const Page = () => {
         </Link>
       </div>
 
-      {/* Latest Products Section */}
-      <h2 className="text-2xl md:text-3xl font-bold text-[#151875] text-center mb-6">
+      {/* Latest Product Section */}
+       <h2 className="text-2xl md:text-3xl font-bold text-[#151875] text-center mb-6">
         Latest Blog
       </h2>
 
-      <div className="container mx-auto mt-16 my-40 flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
             <div
               key={product.id}
-              className="border rounded-lg shadow-md p-4 bg-[#f7f7f7] w-[370px] h-[493px] flex flex-col justify-between"
+              className="border rounded-lg shadow-md p-4 bg-[#f7f7f7] flex flex-col justify-between"
             >
-              <div className="w-full h-[250px] bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+              <div className="w-full h-[200px] sm:h-[250px] bg-gray-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
                 <Image
                   src={product.image}
                   alt={product.name}
                   width={370} // Added width and height for optimization
                   height={250}
-                  className="object-cover h-full"
+                  className="object-cover h-full w-full"
                 />
               </div>
 
               <div className="bg-white p-4 rounded-b-lg flex flex-col justify-between flex-1">
-                <h2 className="text-lg font-semibold mb-2">{product.name}</h2>
-                <div className="flex items-center mb-4">
+                <h2 className="text-lg font-semibold mb-2 text-center sm:text-left">
+                  {product.name}
+                </h2>
+                <div className="text-sm text-gray-700 mb-4">
                   <p>
                     More off this less hello samlande lied much over tightly
                     circa horse taped mightly
                   </p>
                 </div>
                 {product.readMore && (
-                  <div className="mt-4">
+                  <div className="mt-4 text-center sm:text-left">
                     <Link
                       href="/products/details"
                       className="text-blue-500 underline font-semibold"
@@ -110,6 +112,7 @@ const Page = () => {
                 )}
               </div>
             </div>
+        
           ))}
         </div>
       </div>
