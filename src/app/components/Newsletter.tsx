@@ -68,7 +68,7 @@ const Page = () => {
         </Link>
       </div>
 
-       {/* Latest Products Section */}
+       {/* Latest Products Sections */}
        <h2 className="text-2xl md:text-3xl font-bold text-[#151875] text-center mb-6">
         Latest Blog
       </h2>
