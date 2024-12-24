@@ -84,7 +84,7 @@ const trending = () => {
 
         {/* Second Image Box */}
         <div
-          className="w-full sm:w-[420px] h-[270px] bg-center bg-cover"
+          className="w-full sm:w-[420px] h-[270px] bg-center bg-cove "
           style={{
             backgroundImage: "url('/images/Group 155.png')",
           }}

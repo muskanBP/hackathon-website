@@ -69,33 +69,38 @@ const Add: React.FC = () => {
 
       {/* Lower Section */}
       <section className="bg-[#F2F0FF] py-10">
-        <div className="flex flex-wrap md:flex-nowrap items-center gap-10 px-6">
+        <div className="flex flex-col md:flex-row items-center gap-10 px-6">
           {/* Product Image */}
-          <div className="flex-1 w-full md:w-1/2">
+          <div className="flex-1 w-full md:w-1/2 order-1">
             <Image
               src="/images/Home-Stylish-Club-Sofa-Chair-Pleated-Sofa-Armchair-with-Golden-Legs 1.png"
-              width={1000}   // Natural width
-              height={10}   // Natural height
-              layout="responsive" 
+              width={1000} // Natural width
+              height={10} // Natural height
+              layout="responsive"
               alt="Product"
               className="w-full h-auto object-contain"
             />
           </div>
 
           {/* Product Details */}
-          <div className="flex-1 w-full md:w-1/2 text-center md:text-left">
+          <div className="flex-1 w-full md:w-1/2 text-center md:text-left order-2">
             <h3 className="text-xl font-bold text-[#151875] mb-4">
               Unique Features Of Latest & Trending Products
             </h3>
-            <ul className="text-gray-700 space-y-2 list-disc pl-5">
-              <li>
+            <ul className="text-gray-700 space-y-2 pl-5">
+              <li className="list-none relative pl-6">
+                <span className="absolute left-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-blue-500 rounded-full"></span>
                 All frames constructed with hardwood solids and laminates.
               </li>
-              <li>
+              <li className="list-none relative pl-6">
+                <span className="absolute left-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-green-500 rounded-full"></span>
                 Reinforced with double wood dowels, glue, screws, nails at
                 corner blocks, and machine nails.
               </li>
-              <li>Arms, backs, and seats are structurally reinforced.</li>
+              <li className="list-none relative pl-6">
+                <span className="absolute left-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-pink-500 rounded-full"></span>
+                Arms, backs, and seats are structurally reinforced.
+              </li>
             </ul>
             <div className="mt-8">
               <button className="bg-pink-500 text-white py-2 px-6 rounded shadow-md hover:bg-[#151875]">

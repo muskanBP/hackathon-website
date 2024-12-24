@@ -13,19 +13,19 @@ const Page = () => {
   const products = [
     {
       id: 8,
-      name: "Top essential Trends in 2021",
+      name: "Top Essential Trends in 2021",
       image: "/images/Frame 3.png",
       readMore: true,
     },
     {
       id: 9,
-      name: "Top essential Trends in 2021",
+      name: "Top Essential Trends in 2021",
       image: "/images/2dcYhvbHV-M.png",
       readMore: true,
     },
     {
       id: 10,
-      name: "Top essential Trends in 2021",
+      name: "Top Essential Trends in 2021",
       image: "/images/Frame 3 (1).png",
       readMore: true,
     },
@@ -34,21 +34,23 @@ const Page = () => {
   return (
     <div>
       {/* Newsletter Section */}
-      <section className="relative flex flex-col items-center justify-center text-center py-16">
+      <section className="relative flex flex-col items-center justify-center text-center py-16 px-4">
         <Image
           src="/images/Rectangle 102.png"
           alt="Newsletter Background"
-          layout="fill" // Ensures the image takes up the full container
+          layout="fill"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
-        <div className="relative z-10">
-          <h1 className="text-2xl font-bold text-[#151875] mb-4">
+        <div className="relative z-10 bg-opacity-70 bg-white py-8 px-6 rounded-md">
+          <h1 className="text-xl md:text-3xl font-bold text-[#151875] mb-4">
             Get Latest Update By Subscribing
           </h1>
-          <h1 className="text-2xl font-bold text-[#151875] mb-4">Our Newsletter</h1>
+          <h1 className="text-xl md:text-3xl font-bold text-[#151875] mb-4">
+            Our Newsletter
+          </h1>
           <button
             onClick={handleButtonClick}
-            className="bg-pink-500 text-white py-3 px-6 text-lg hover:bg-blue-700 transition"
+            className="bg-pink-500 text-white py-3 px-6 text-sm md:text-lg hover:bg-blue-700 transition"
           >
             Shop Now
           </button>
@@ -56,20 +58,20 @@ const Page = () => {
       </section>
 
       {/* Icon Section */}
-      <div className="flex justify-center items-center py-16">
+      <div className="flex justify-center items-center py-12 px-4">
         <Link href="/products/chair">
           <Image
             src="/images/icon.png"
             alt="Icon"
-            width={800}
-            height={800}
-            className="object-contain"
+            width={400}
+            height={400}
+            className="object-contain max-w-full h-auto"
           />
         </Link>
       </div>
 
-       {/* Latest Product Section */}
-       <h2 className="text-2xl md:text-3xl font-bold text-[#151875] text-center mb-6">
+      {/* Latest Product Section */}
+      <h2 className="text-lg md:text-2xl font-bold text-[#151875] text-center mb-6">
         Latest Blog
       </h2>
 
@@ -84,17 +86,17 @@ const Page = () => {
                 <Image
                   src={product.image}
                   alt={product.name}
-                  width={370} // Added width and height for optimization
+                  width={370}
                   height={250}
                   className="object-cover h-full w-full"
                 />
               </div>
 
               <div className="bg-white p-4 rounded-b-lg flex flex-col justify-between flex-1">
-                <h2 className="text-lg font-semibold mb-2 text-center sm:text-left">
+                <h2 className="text-sm md:text-lg font-semibold mb-2 text-center sm:text-left">
                   {product.name}
                 </h2>
-                <div className="text-sm text-gray-700 mb-4">
+                <div className="text-xs md:text-sm text-gray-700 mb-4">
                   <p>
                     More off this less hello samlande lied much over tightly
                     circa horse taped mightly
@@ -112,7 +114,6 @@ const Page = () => {
                 )}
               </div>
             </div>
-        
           ))}
         </div>
       </div>
