@@ -32,7 +32,7 @@ const Page = () => {
   ];
 
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       {/* Newsletter Section */}
       <section className="relative flex flex-col items-center justify-center text-center py-16 px-4">
         <Image
@@ -57,13 +57,12 @@ const Page = () => {
         </div>
       </section>
 
-
       {/* Latest Product Section */}
       <h2 className="mt-20 text-lg md:text-3xl font-bold text-[#151875] text-center mb-6">
         Latest Blog
       </h2>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
             <div

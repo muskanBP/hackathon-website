@@ -32,40 +32,42 @@ const Add: React.FC = () => {
 
   return (
     <div className="bg-white min-h-screen">
-      {/* Shopex Offer Section */}
-      <section className="text-center py-16">
-        <h2 className="text-3xl font-bold text-[#151875] mb-10">
-          What Shopex Offer!
-        </h2>
-        {/* Responsive Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
-          {products.map((product, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-lg p-6 rounded-md text-center"
-            >
-              <div className="mb-4">
-                {/* Circle with Background and Image */}
-                <div className="w-20 h-20 mx-auto flex items-center justify-center">
-                  <Link href={product.link}>
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      width={64}
-                      height={64}
-                      className="rounded-full cursor-pointer"
-                    />
-                  </Link>
-                </div>
+    {/* Shopex Offer Section */}
+    <section className="text-center py-16">
+      <h2 className="text-3xl font-bold text-[#151875] mb-10">
+        What Shopex Offer!
+      </h2>
+      {/* Responsive Grid Layout */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
+        {products.map((product, index) => (
+          <div
+            key={index}
+            className="bg-white shadow-md hover:shadow-xl transition-shadow duration-300 p-6 rounded-md text-center transform hover:scale-105"
+          >
+            <div className="mb-4">
+              {/* Circle with Background and Image */}
+              <div className="w-20 h-20 mx-auto flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200 transition-colors duration-300">
+                <Link href={product.link}>
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    width={64}
+                    height={64}
+                    className="rounded-full cursor-pointer"
+                  />
+                </Link>
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mt-4">
-                {product.name}
-              </h3>
-              <p className="text-gray-500 text-sm mt-2">{product.price}</p>
             </div>
-          ))}
-        </div>
-      </section>
+            <h3 className="text-lg font-semibold text-gray-800 mt-4">
+              {product.name}
+            </h3>
+            <p className="text-gray-500 text-sm mt-2">{product.price}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  
+  
 
       {/* Lower Section */}
       <section className="bg-[#F2F0FF] py-10">

@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Footer from "../footers";
 import Header from "../header";  // Ensure Header is correctly imported
+import Link from "next/link";    // Import Next.js Link component
 
 // Define the types for Cart Item
 type CartItem = {
@@ -61,7 +61,8 @@ const Cart = () => {
       {/* Header section */}
       <Header />
 
-      <div className="p-6 lg:p-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="p-4 md:p-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
         {/* Cart Items Table */}
         <div className="lg:col-span-2">
           <table className="w-full border-collapse border border-gray-300">
@@ -90,11 +91,15 @@ const Cart = () => {
                       alt={item.name}
                       width={500}
                       height={500}
-                      className="w-16 h-16 rounded-lg object-cover"
+                      className="w-16 h-16 rounded-lg object-cover cursor-pointer"
                     />
                     <div>
-                      <p className="font-semibold text-[#1D3178] text-xs sm:text-base md:text-lg">
-                        {item.name}
+                      <p
+                        className="font-semibold text-[#1D3178] text-xs sm:text-base md:text-lg cursor-pointer"
+                      >
+                        <Link href={`/product/${item.id}`} target="_blank">
+                          {item.name}
+                        </Link>
                       </p>
                       <p className="text-sm text-gray-500 text-xs sm:text-sm md:text-base">
                         Color: {item.color}, Size: {item.size}
@@ -177,8 +182,7 @@ const Cart = () => {
         </div>
       </div>
 
-      {/* Footers section */}
-      <Footer />
+    
     </>
   );
 };
