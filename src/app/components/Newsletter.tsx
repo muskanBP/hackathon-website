@@ -57,21 +57,9 @@ const Page = () => {
         </div>
       </section>
 
-      {/* Icon Section */}
-      <div className="flex justify-center items-center py-12 px-4">
-        <Link href="/products/chair">
-          <Image
-            src="/images/icon.png"
-            alt="Icon"
-            width={400}
-            height={400}
-            className="object-contain max-w-full h-auto"
-          />
-        </Link>
-      </div>
 
       {/* Latest Product Section */}
-      <h2 className="text-lg md:text-2xl font-bold text-[#151875] text-center mb-6">
+      <h2 className="mt-20 text-lg md:text-3xl font-bold text-[#151875] text-center mb-6">
         Latest Blog
       </h2>
 
